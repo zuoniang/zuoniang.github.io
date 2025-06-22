@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>笔墨匠心 - 专业文章写作与修改服务</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Scholarly Ink Palette -->
+    <!-- Application Structure Plan: A single-page, top-to-bottom scrolling experience designed as a persuasive narrative. The flow is: 1. Hero (Value Proposition), 2. About/Teacher Intro (Build Trust), 3. Services (Explain Offerings), 4. Testimonials (Social Proof), 5. Contact/QR Code (Conversion). This logical sequence guides the user from awareness to action, answering key questions ("What is it?", "Why trust you?", "What do you do?", "How do I contact you?") in a natural order, making it highly effective for a specialized service business. Key interactions are a smooth-scroll CTA and an accessible 'copy ID' button. -->
+    <!-- Visualization & Content Choices: Report Info: Presenting three distinct services. -> Goal: Organize & Inform. -> Viz/Presentation Method: A three-column layout using structured HTML/CSS with Unicode icons (e.g., ✒️, 📜, ✨) to visually separate and represent each service. This acts as a clean, diagrammatic presentation. -> Interaction: Static display with subtle hover effects to maintain focus. -> Justification: This approach avoids clutter, clearly presents offerings, and is easy to scan, aligning with the goal of a professional, uncluttered interface. It effectively uses layout as a tool for information organization. -> Library/Method: Tailwind CSS for layout, Unicode for icons. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Noto Serif SC', serif;
+            background-color: #FDFBF6;
+            color: #2C3E50;
+        }
+        .text-gold {
+            color: #C0A062;
+        }
+        .bg-gold {
+            background-color: #C0A062;
+        }
+        .border-gold {
+            border-color: #C0A062;
+        }
+        .icon-style {
+            font-size: 2.5rem;
+            line-height: 1;
+            margin-bottom: 1rem;
+            color: #C0A062;
+        }
+        .transition-all-smooth {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="p-4 md:p-6 sticky top-0 bg-white/80 backdrop-blur-sm z-50 border-b border-gray-200">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold text-gray-800">笔墨匠心</h1>
+            <a href="#contact" class="bg-gold text-white text-sm md:text-base font-semibold py-2 px-4 rounded-lg shadow-md hover:opacity-90 transition-all-smooth">
+                立即添加
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="h-[60vh] flex items-center justify-center text-center bg-cover bg-center" style="background-image: linear-gradient(rgba(253, 251, 246, 0.8), rgba(253, 251, 246, 1)), url('https://placehold.co/1920x1080/f0eee6/333333?text=%E7%AC%94%E5%A2%A8%E6%84%8F%E8%B1%A1');">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 tracking-wider">
+                    专注学术写作难题<br class="hidden md:block"/>重塑文章<span class="text-gold">专业价值</span>
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    我们以“匠心”精神，为您提供一站式文章格式修改、专业写作指导、论文降重及AI内容优化服务，助您自信跨越学术与职业写作的每一个挑战。
+                </p>
+                <a href="#services" class="bg-gray-800 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-700 transition-all-smooth text-lg">
+                    了解我们的服务
+                </a>
+            </div>
+        </section>
+
+        <section id="teacher" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 max-w-4xl mx-auto">
+                    <div class="flex-shrink-0">
+                        <img src="https://placehold.co/150x150/C0A062/FFFFFF?text=师" alt="修改老师" class="rounded-full shadow-xl border-4 border-white">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold mb-3">您好，我是您的专属修改老师</h3>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            怀着对文字的敬畏与热爱，我致力于以“匠人”之心雕琢每一份文稿。拥有多年的学术编辑与写作指导经验，我深知严谨的格式、流畅的表达和思想的原创性对于一篇佳作的重要性。在这里，您获得的不仅是服务，更是一位与您并肩作战、追求卓越的伙伴。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold">我们如何以<span class="text-gold">匠心</span>为您服务</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">从格式规范到内容升华，我们关注每一个细节。</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all-smooth transform hover:-translate-y-2">
+                        <div class="icon-style">✒️</div>
+                        <h3 class="text-2xl font-bold mb-3">文章格式修改</h3>
+                        <p class="text-gray-600">告别繁琐格式要求，无论是期刊投稿、毕业论文还是工作报告，我们都能精准匹配规范，让您的文稿专业无可挑剔。</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all-smooth transform hover:-translate-y-2">
+                        <div class="icon-style">📜</div>
+                        <h3 class="text-2xl font-bold mb-3">专业文章写作</h3>
+                        <p class="text-gray-600">思路卡壳或时间紧张？我们提供高质量的原创写作支持，助您清晰表达观点，提升学术与职业影响力。</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all-smooth transform hover:-translate-y-2">
+                        <div class="icon-style">✨</div>
+                        <h3 class="text-2xl font-bold mb-3">论文降重与降AI</h3>
+                        <p class="text-gray-600">采用先进技术与人工精修，有效降低重复率与AI痕迹，确保学术诚信，让您的成果顺利通过审核。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="testimonials" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold">客户的<span class="text-gold">信任</span>与选择</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">他们的成功是我们最好的证明。</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                        <p class="text-gray-700 italic mb-4">“老师修改得非常仔细，格式完全符合我们期刊的要求，省了我大把时间。真的太感谢了！”</p>
+                        <div class="font-semibold text-gray-800">— 李同学, 某985高校博士生</div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                        <p class="text-gray-700 italic mb-4">“降重效果很明显，而且保留了文章的原意，语句也更通顺了。推荐给所有为查重烦恼的同学！”</p>
+                        <div class="font-semibold text-gray-800">— 王女士, 青年研究员</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <div class="bg-white rounded-xl shadow-2xl max-w-2xl mx-auto p-8 md:p-12 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3">即刻联系我们</h2>
+                    <p class="text-lg text-gray-600 mb-8">开启您的写作新篇章，让我们助您一臂之力。</p>
+                    
+                    <div class="flex justify-center mb-4">
+                        <img id="qrCodeImage" src="./iamge/421d97b6f587baf316e6a68718a01c48.jpg" alt="微信二维码" class="w-48 h-48 md:w-56 md:h-56 rounded-lg shadow-md border-4 border-gold">
+                    </div>
+                    
+                    <p class="font-semibold text-lg mb-6">微信扫码，添加修改老师</p>
+
+                    <div class="text-center">
+                         <p class="text-sm text-gray-500 mb-2">若无法扫码，可复制微信号添加</p>
+                         <button id="copyBtn" class="bg-gray-200 text-gray-800 font-mono py-2 px-4 rounded-md hover:bg-gray-300 transition-all-smooth" data-wechat-id="wangyou39230">
+                             复制微信号
+                         </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-6 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 笔墨匠心. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const copyBtn = document.getElementById('copyBtn');
+            const wechatId = copyBtn.getAttribute('data-wechat-id');
+
+            copyBtn.addEventListener('click', function() {
+                const dummy = document.createElement('textarea');
+                document.body.appendChild(dummy);
+                dummy.value = wechatId;
+                dummy.select();
+                
+                try {
+                    document.execCommand('copy');
+                    copyBtn.textContent = '已复制!';
+                    setTimeout(() => {
+                        copyBtn.textContent = '复制微信号';
+                    }, 2000);
+                } catch (err) {
+                    console.error('无法复制文本: ', err);
+                    copyBtn.textContent = '复制失败';
+                }
+
+                document.body.removeChild(dummy);
+            });
+            
+            const qrCodeImage = document.getElementById('qrCodeImage');
+            qrCodeImage.onerror = function() {
+                this.src = 'https://placehold.co/256x256/eeeeee/cc0000?text=二维码加载失败';
+                this.alt = '微信二维码加载失败';
+            };
+        });
+    </script>
+</body>
+</html>
